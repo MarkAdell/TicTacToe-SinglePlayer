@@ -1,13 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Media;
+
+ //   Author : Mark Adel
+ //   Created at : 10/6/2016
 
 namespace TicTacToeGame
 {
@@ -153,7 +150,7 @@ public partial class Form1 : Form
                     {
                         Paint_Green(buttons[i, 0], buttons[i, 1], buttons[i, 2]);
                         Set_Score(buttons[i, 0].Text);
-                        ResetButtons();
+                        ResetEverything();
                         return;
                     }
                 }
@@ -167,7 +164,7 @@ public partial class Form1 : Form
                     {
                         Paint_Green(buttons[0, i], buttons[1, i], buttons[2, i]);
                         Set_Score(buttons[0, i].Text);
-                        ResetButtons();
+                        ResetEverything();
                         return;
                     }
                 }
@@ -179,7 +176,7 @@ public partial class Form1 : Form
                 {
                     Paint_Green(buttons[0, 0], buttons[1, 1], buttons[2, 2]);
                     Set_Score(buttons[0, 0].Text);
-                    ResetButtons();
+                    ResetEverything();
                     return;
                 }
 
@@ -187,7 +184,7 @@ public partial class Form1 : Form
                 {
                     Paint_Green(buttons[0, 2], buttons[1, 1], buttons[2, 0]);
                     Set_Score(buttons[0, 2].Text);
-                    ResetButtons();
+                    ResetEverything();
                     return;
                 }
             }
@@ -195,7 +192,7 @@ public partial class Form1 : Form
             if (PlayCounter == 5)
             {
                 Set_Score("t");
-                ResetButtons();
+                ResetEverything();
                 return;
             }
 
@@ -209,7 +206,7 @@ public partial class Form1 : Form
             block3.ForeColor = System.Drawing.Color.MediumSeaGreen;
         }
 
-        private void ResetButtons() //reseting everything in case of win or tie.
+        private void ResetEverything() //reseting everything in case of win or tie.
         {
             clicks = 0;
             PlayCounter = 0;
