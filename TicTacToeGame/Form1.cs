@@ -31,7 +31,7 @@ public partial class Form1 : Form
         {
             clicks++;
             Button button = (Button)sender;
-            if (button.Text != "" || clicks == 2) return; //preventing player to click to times in a row, at same or different places.
+            if (button.Text != "" || clicks == 2) return; //preventing player to click two times in a row, at same or different places.
             PlayCounter++;
             PlaySound("boing_spring.wav");
             button.Text = "X";
@@ -61,7 +61,7 @@ public partial class Form1 : Form
                     return;
             }
 
-            //couldn't win or block the play random.
+            //couldn't win or block then play random.
             int row, col;
             Random random = new Random(); 
             do
@@ -220,7 +220,6 @@ public partial class Form1 : Form
             }
         }
 
-
         int score_o = 0, score_x = 0, tie = 0;
         private void Set_Score(string winner) //setting the score in case of win or tie.
         {
@@ -244,7 +243,6 @@ public partial class Form1 : Form
                 label5.Text = tie.ToString();
                 MessageBox.Show("Tie!");
             }
-            
         }
 
         private void PlaySound(string path) //playing a .wav file at the given path. 

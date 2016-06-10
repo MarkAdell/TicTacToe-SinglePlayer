@@ -16,3 +16,6 @@ C:\Users\Mark\Desktop\TicTacToeGame\TicTacToeGame\obj\Debug\TicTacToeGame.csproj
 C:\Users\Mark\Desktop\TicTacToeGame\TicTacToeGame\obj\Debug\TicTacToeGame.Form1.resources
 C:\Users\Mark\Desktop\TicTacToeGame\TicTacToeGame\obj\Debug\TicTacToeGame.Properties.Resources.resources
 C:\Users\Mark\Desktop\TicTacToeGame\TicTacToeGame\obj\Debug\TicTacToeGame.csproj.GenerateResource.Cache
+C:\Users\Mark\Desktop\TicTacToe Game\TicTacToeGame\bin\Debug\TicTacToeGame.exe.config
+C:\Users\Mark\Desktop\TicTacToe Game\TicTacToeGame\obj\Debug\TicTacToeGame.exe
+C:\Users\Mark\Desktop\TicTacToe Game\TicTacToeGame\obj\Debug\TicTacToeGame.pdb
